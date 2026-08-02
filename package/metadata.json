@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "stackrot"
+            }
+        ],
+        "BugReportUrl": "https://github.com/stackrot/PlasmaScale/issues",
+        "Category": "Network",
+        "Description": "Control Tailscale, inspect devices and manage exit nodes",
+        "Icon": "network-vpn",
+        "Id": "com.stackrot.plasmascale",
+        "License": "MIT",
+        "Name": "PlasmaScale",
+        "Version": "1.0.0",
+        "Website": "https://github.com/stackrot/PlasmaScale"
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-NotificationArea": "true",
+    "X-Plasma-NotificationAreaCategory": "ApplicationStatus"
+}
