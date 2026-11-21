@@ -7,6 +7,7 @@ It shows connection state, peer availability, addresses, traffic totals and rece
 ## Requirements
 
 - KDE Plasma 6
+- `plasma5support`, used to run the `tailscale` commands (minimal Plasma installs may not include it)
 - The `tailscale` CLI installed and authenticated
 - `kpackagetool6` for installation
 
