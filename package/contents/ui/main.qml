@@ -717,12 +717,11 @@ PlasmoidItem {
                 ColumnLayout {
                     spacing: Kirigami.Units.smallSpacing
 
-                    PlasmaComponents.TextField {
+                    PlasmaExtras.SearchField {
                         id: exitSearch
 
                         Layout.fillWidth: true
                         placeholderText: "Filter by country or city…"
-                        clearButtonShown: true
                     }
 
                     PlasmaComponents.Button {
