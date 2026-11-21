@@ -9,7 +9,7 @@ QMLLINT ?= $(or $(wildcard $(QT_HOST_BINS)/qmllint),qmllint)
 
 check:
 	python3 -m json.tool package/metadata.json >/dev/null
-	$(QMLLINT) package/contents/ui/main.qml
+	$(QMLLINT) -E --max-warnings 0 package/contents/ui/main.qml
 	@test -s package/contents/icons/tailscale.svg
 
 package: check
