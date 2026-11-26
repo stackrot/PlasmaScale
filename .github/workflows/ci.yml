@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    # qmllint needs the Plasma 6 QML modules to resolve the widget's
+    # imports. Ubuntu 24.04 only has Plasma 5, so this runs on Arch.
+    container: archlinux:latest
+    steps:
+      - run: >-
+          pacman -Syu --noconfirm --needed git make python zip unzip
+          qt6-declarative kirigami libplasma plasma5support
+      - uses: actions/checkout@v7
+      - run: make package
